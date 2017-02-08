@@ -2,8 +2,8 @@
 //  PlanetController.swift
 //  SolarSystem
 //
-//  Created by Caleb Hicks on 9/28/15.
-//  Copyright © 2015 DevMountain. All rights reserved.
+//  Created by JB Thompson on 8/18/16.
+//  Copyright © 2016 JB Thompson. All rights reserved.
 //
 
 import Foundation
@@ -31,5 +31,4 @@ class PlanetController {
         
         return [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto]
     }
-    
 }
