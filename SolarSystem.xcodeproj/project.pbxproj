@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E28260BC1D68E326004B8B5C /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28260BB1D68E326004B8B5C /* PlanetDetailViewController.swift */; };
 		E2BB00691D66A14B00D24AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB00681D66A14B00D24AD5 /* AppDelegate.swift */; };
-		E2BB006B1D66A14B00D24AD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB006A1D66A14B00D24AD5 /* ViewController.swift */; };
 		E2BB006E1D66A14B00D24AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB006C1D66A14B00D24AD5 /* Main.storyboard */; };
 		E2BB00701D66A14B00D24AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BB006F1D66A14B00D24AD5 /* Assets.xcassets */; };
 		E2BB00731D66A14B00D24AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB00711D66A14B00D24AD5 /* LaunchScreen.storyboard */; };
+		E2BB007B1D66A42A00D24AD5 /* PlanetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB007A1D66A42A00D24AD5 /* PlanetListTableViewController.swift */; };
+		E2BB007E1D66AA1800D24AD5 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB007C1D66AA1800D24AD5 /* Planet.swift */; };
+		E2BB007F1D66AA1800D24AD5 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB007D1D66AA1800D24AD5 /* PlanetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E28260BB1D68E326004B8B5C /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
 		E2BB00651D66A14B00D24AD5 /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BB00681D66A14B00D24AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2BB006A1D66A14B00D24AD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2BB006D1D66A14B00D24AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2BB006F1D66A14B00D24AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2BB00721D66A14B00D24AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2BB00741D66A14B00D24AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BB007A1D66A42A00D24AD5 /* PlanetListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetListTableViewController.swift; sourceTree = "<group>"; };
+		E2BB007C1D66AA1800D24AD5 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		E2BB007D1D66AA1800D24AD5 /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				E2BB00681D66A14B00D24AD5 /* AppDelegate.swift */,
-				E2BB006A1D66A14B00D24AD5 /* ViewController.swift */,
+				E2BB007A1D66A42A00D24AD5 /* PlanetListTableViewController.swift */,
+				E28260BB1D68E326004B8B5C /* PlanetDetailViewController.swift */,
 				E2BB006C1D66A14B00D24AD5 /* Main.storyboard */,
+				E2BB007C1D66AA1800D24AD5 /* Planet.swift */,
+				E2BB007D1D66AA1800D24AD5 /* PlanetController.swift */,
 				E2BB006F1D66A14B00D24AD5 /* Assets.xcassets */,
 				E2BB00711D66A14B00D24AD5 /* LaunchScreen.storyboard */,
 				E2BB00741D66A14B00D24AD5 /* Info.plist */,
@@ -91,11 +100,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "JB Thompson";
 				TargetAttributes = {
 					E2BB00641D66A14B00D24AD5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -135,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2BB006B1D66A14B00D24AD5 /* ViewController.swift in Sources */,
+				E2BB007E1D66AA1800D24AD5 /* Planet.swift in Sources */,
+				E2BB007F1D66AA1800D24AD5 /* PlanetController.swift in Sources */,
+				E2BB007B1D66A42A00D24AD5 /* PlanetListTableViewController.swift in Sources */,
+				E28260BC1D68E326004B8B5C /* PlanetDetailViewController.swift in Sources */,
 				E2BB00691D66A14B00D24AD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +189,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -222,8 +237,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -242,6 +259,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -255,6 +273,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jbthompson.SolarSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -266,6 +285,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jbthompson.SolarSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -288,6 +308,7 @@
 				E2BB00791D66A14B00D24AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
