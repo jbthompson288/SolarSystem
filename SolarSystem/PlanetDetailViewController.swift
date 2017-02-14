@@ -33,8 +33,8 @@ class PlanetDetailViewController: UIViewController {
         title = planet.name
         planetImageView.image = UIImage(named: planet.imageName)
         diameterLabel.text = "\(planet.diameter)"
-        distanceLabel.text = "\(planet.dayLength) hours"
-        lengthLabel.text = "\(planet.millionKMsFromSun) 10^6km"
+        lengthLabel.text = "\(planet.dayLength) hours"
+        distanceLabel.text = "\(planet.millionKMsFromSun) 10^6km"
     }
 
     override func didReceiveMemoryWarning() {
